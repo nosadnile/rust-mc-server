@@ -1,0 +1,26 @@
+[package]
+name = "nsn-work"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+bevy_ecs = "0.14.2"
+concat-idents = "1.1.5"
+flume = "0.11.0"
+lazy_static = "1.5.0"
+noise = "0.9.0"
+once_cell = "1.19.0"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+tokio = { version = "1.40.0", features = ["full"] }
+toml = "0.8.19"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["ansi", "env-filter", "registry"] }
+valence = { git = "https://github.com/valence-rs/valence", version = "0.2.0-alpha.1" }
+
+[workspace]
+resolver = "2"
+members = [
+    "./status"
+]
