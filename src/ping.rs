@@ -6,8 +6,9 @@ use valence::{
     rand::{self, Rng},
     text::{Color, IntoText},
     uuid::Uuid,
-    MINECRAFT_VERSION,
 };
+
+pub const MINECRAFT_VERSION: &str = "1.21.1";
 
 pub struct PingCallbacks;
 
